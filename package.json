@@ -1,0 +1,27 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "Code test for CoolStuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delereyus/shopping-cart.git"
+  },
+  "author": "Emanuel Harling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delereyus/shopping-cart/issues"
+  },
+  "homepage": "https://github.com/delereyus/shopping-cart#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "minimist": "^1.2.5",
+    "path": "^0.12.7",
+    "sqlite3": "^4.1.1"
+  }
+}
