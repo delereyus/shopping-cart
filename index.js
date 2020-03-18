@@ -125,6 +125,6 @@ app.put('/shoppingItem', (req, res) => {
   });
 })
 
-app.listen(5005, () => {
-  console.log("listening on http://localhost:5005");
+app.listen(process.env.PORT, () => {
+  console.log("listening on http://localhost:" + process.env.PORT);
 });
