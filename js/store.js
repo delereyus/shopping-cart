@@ -5,17 +5,20 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
     state: {
        shoppingLists: [],
-       currentListIndex: ''
+       items: []
     },
     mutations: {
-      createShoppingList(state, shoppingList){
+      addList(state, shoppingList){
         state.shoppingLists.push(shoppingList)
       },
-      addItemToList(state, listIndex, item){
-        state.shoppingLists[listIndex].push(item)
+      addItem(state, item){
+        state.items.push(item)
       },
-      setCurrentShoppingList(state, index){
-        state.currentListIndex = index
+      removeItem(state, index){
+        state.items.splice(index, 1)
+      },
+      editItem(state, itemWithIndex){
+        state.items.splice(itemWithIndex.index, 1, itemWithIndex.item)
       }
     }
 })

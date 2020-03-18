@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+#forms {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#forms input, select, button {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 2em;
+}
+
+.shoppingListContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.shoppingList {
+  display: flex;
+  flex-direction: column;
+}
+
+.addItemForm {
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+}
+
+#createList {
+  display: flex;
+  flex-direction: column;
+}
+
+#createList input {
+  margin-bottom: 20px;
+}
+
+.itemAndButton {
+  display: flex;
+}
+
+.itemAndButton p {
+  margin: 10px;
+}
+
+.itemCard {
+  display: flex;
+}
+
+.itemRemove {
+  cursor: pointer;
+}
+
+.editItem {
+  cursor: pointer;
+}
